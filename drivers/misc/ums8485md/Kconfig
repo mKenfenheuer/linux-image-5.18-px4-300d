@@ -1,9 +1,8 @@
-# SPDX-License-Identifier: GPL-2.0-only
 config UMS8485MD
-	depends on GPIO_ICH
 	tristate "UMS8485MD LCM display dupport for Lenovo PX4 and PX6 series"
+	select GPIO_ICH
 	help
-	  This driver provides /dev/lcm and /proc/ums8484md/* interfaces to use the front facing display on Lenovo PX4 and PX6 series NAS devices.
+	  This driver provides /dev/lcm and /proc/ums8485md/* interfaces to use the front facing display on Lenovo PX4 and PX6 series NAS devices.
 
 	  To compile this driver as a module, choose M here. The module
-	  will be called ums8484md.
+	  will be called ums8485md.
