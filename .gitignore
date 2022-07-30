@@ -152,3 +152,4 @@ sphinx_*/
 # included in our repository
 #
 !/debian/
+/debian/
