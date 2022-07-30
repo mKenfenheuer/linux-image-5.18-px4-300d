@@ -25,7 +25,7 @@
 #define LCM_MINOR 128
 #define LCM_FB_SIZE 1030
 
-#define GPIO_BASE 451
+#define GPIO_BASE 963
 #define LCD_SI (GPIO_BASE + 6)
 #define LCD_SCL (GPIO_BASE + 7)
 #define LCD_RS (GPIO_BASE + 16)
@@ -461,6 +461,8 @@ static void __exit lcm_exit(void)
 
 MODULE_DESCRIPTION("LCM Driver");
 MODULE_LICENSE("GPL");
+
+MODULE_SOFTDEP("pre: gpio-ich");
 
 module_init(lcm_init);
 module_exit(lcm_exit);
